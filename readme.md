@@ -6,7 +6,10 @@ Don't use keras as much as tensorflow, so writing this was made a lot easier whe
 [this project](https://github.com/ekzhang/char-rnn-keras) as a reference. 
 
 ## Installation
-Coming soon... :pizza:
+Things you'll need <br />
+- Python (should work on any version >=2.7 .... hopefully)
+<br />
+To install run `pip install -r requirements.txt` or `pip3 install -r requirements.txt`
 
 ## How to use
 In order to run, simply call `python generate.py` <br />
@@ -18,3 +21,6 @@ With this generator you can specify three things:
 <br />
 Here's one more example for using all of the above arguments: `python generate.py --seed J --numnames 10 --maxlen 10`<br />
 This sample will make 10 names starting with the letter J and will cut them off at a max of 10 characters long
+
+### Disclaimer
+Not all names are guaranteed to be unique at the moment, sorry.
