@@ -1,7 +1,7 @@
 from keras.models import Sequential, load_model
 from keras.layers import LSTM, Dropout, TimeDistributed, Dense, Activation, Embedding
 import numpy as np
-
+import argparse
 def build_sample_model(vocab_size,emb_size=100,num_layers=1,hidden_size=100,dropout=0.2):
 	model = Sequential()
 	model.add(Embedding(vocab_size,emb_size,batch_input_shape=(1,1)))
