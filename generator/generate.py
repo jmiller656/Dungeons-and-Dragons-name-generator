@@ -1,6 +1,14 @@
+import numpy as np
+import os
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+import sys
+stderr = sys.stderr
+sys.stderr = open(os.devnull, 'w')
 from keras.models import Sequential, load_model
 from keras.layers import LSTM, Dropout, TimeDistributed, Dense, Activation, Embedding
-import numpy as np
+sys.stderr = stderr
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 def build_sample_model(vocab_size,emb_size=100,num_layers=1,hidden_size=100,dropout=0.2):
 	model = Sequential()

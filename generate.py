@@ -2,6 +2,7 @@ from generator import generate
 import argparse
 import random
 import string
+
 def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument("--seed",default="random")
@@ -20,4 +21,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
