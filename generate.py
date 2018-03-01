@@ -45,5 +45,5 @@ def sample(epoch, header, num_chars):
 text = open("names.txt").read()
 for i in range(10):
 	name = sample(10000,"Z",50)
-	print name +" "+ str(name in text)
+	print(name +" "+ str(name in text))
 
