@@ -9,7 +9,7 @@ Don't use keras as much as tensorflow, so writing this was made a lot easier whe
 Things you'll need <br />
 - Python (should work on any version >=2.7 .... hopefully)
 <br />
-To install run ```pip install -r requirements.txt``` or ```pip3 install -r requirements.txt```
+To install run `pip install -r requirements.txt` or `pip3 install -r requirements.txt`
 
 ## How to use
 In order to run, simply call `python generate.py` <br />
@@ -19,7 +19,7 @@ With this generator you can specify three things:
 - `--numnames` is the number of names you'd like to generate, if you want to generate a batch.
 - `--maxlen` this is the constraint on maximum length of a name. I find it's better not to touch this, but included it as an option anyways.
 <br />
-Here's one more example for using all of the above arguments: ```python generate.py --seed J --numnames 10 --maxlen 10``` <br />
+Here's one more example for using all of the above arguments: `python generate.py --seed J --numnames 10 --maxlen 10` <br />
 This sample will make 10 names starting with the letter J and will cut them off at a max of 10 characters long
 
 ### Disclaimer
