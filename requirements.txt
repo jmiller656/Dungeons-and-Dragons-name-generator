@@ -2,3 +2,4 @@ numpy
 keras
 tensorflow
 argparse
+h5py
