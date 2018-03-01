@@ -20,7 +20,7 @@ def sample(epoch, header, num_chars):
 	vocab_size = len(char_to_ix)
 	model = build_sample_model(vocab_size)
 	#load_weights(epoch, model)
-	model.load_weights('weights.{}.h5'.format(10000))
+	model.load_weights('weights.h5')
 
 	sampled = [char_to_ix[c] for c in header]
 	for c in header[:-1]:
