@@ -28,7 +28,7 @@ def read_batches(T,vocab_size,batch_size,seq_len):
 			for i in range(0, seq_len):
 				X[batch_idx, i] = T[batch_chars * batch_idx + start + i]
 				Y[batch_idx, i, T[batch_chars * batch_idx + start + i + 1]] = 1
-	yield X, Y
+		yield X, Y
 
 def train(text,epochs,save_freq=10,batch_size=1000,seq_len=20):
 	char_to_ix = {ch:i for (i,ch) in enumerate(sorted(list(set(text))))}
